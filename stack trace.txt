@@ -1,0 +1,43 @@
+Unhandled Exception:
+
+System.InvalidOperationException: <Timeout exceeded getting exception details>
+
+03-08 11:57:06.788 D/Mono    (24980): DllImport attempting to load: '/system/lib64/liblog.so'.
+03-08 11:57:06.790 D/Mono    (24980): DllImport loaded library '/system/lib64/liblog.so'.
+03-08 11:57:06.791 D/Mono    (24980): DllImport searching in: '/system/lib64/liblog.so' ('/system/lib64/liblog.so').
+03-08 11:57:06.791 D/Mono    (24980): Searching for '__android_log_print'.
+03-08 11:57:06.791 D/Mono    (24980): Probing '__android_log_print'.
+03-08 11:57:06.791 D/Mono    (24980): Found as '__android_log_print'.
+03-08 11:57:06.801 I/MonoDroid(24980): UNHANDLED EXCEPTION:
+03-08 11:57:06.846 I/MonoDroid(24980): System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+03-08 11:57:06.847 I/MonoDroid(24980):   at System.Collections.Generic.List`1+Enumerator[T].MoveNextRare () [0x00013] in <fe08c003e91342eb83df1ca48302ddbb>:0 
+03-08 11:57:06.847 I/MonoDroid(24980):   at System.Collections.Generic.List`1+Enumerator[T].MoveNext () [0x0004a] in <fe08c003e91342eb83df1ca48302ddbb>:0 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.Platform.Android.VisualElementTracker.HandleRedrawNeeded (System.Object sender, Xamarin.Forms.Internals.EventArg`1[T] e) [0x00022] in D:\a\1\s\Xamarin.Forms.Platform.Android\VisualElementTracker.cs:180 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.VisualElement.BatchCommit () [0x0001c] in D:\a\1\s\Xamarin.Forms.Core\VisualElement.cs:574 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.AnimationExtensions.HandleTweenerFinished (System.Object o, System.EventArgs args) [0x000cb] in D:\a\1\s\Xamarin.Forms.Core\AnimationExtensions.cs:276 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.Tweener.<Start>b__22_0 (System.Int64 step) [0x00095] in D:\a\1\s\Xamarin.Forms.Core\Tweener.cs:103 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.Internals.Ticker.SendSignals (System.Int64 step) [0x0003c] in D:\a\1\s\Xamarin.Forms.Core\Internals\Ticker.cs:102 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.Internals.Ticker.SendSignals (System.Int32 timestep) [0x00014] in D:\a\1\s\Xamarin.Forms.Core\Internals\Ticker.cs:91 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Xamarin.Forms.Platform.Android.AndroidTicker.OnValOnUpdate (System.Object sender, Android.Animation.ValueAnimator+AnimatorUpdateEventArgs e) [0x00000] in D:\a\1\s\Xamarin.Forms.Platform.Android\AndroidTicker.cs:71 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Android.Animation.ValueAnimator+IAnimatorUpdateListenerImplementor.OnAnimationUpdate (Android.Animation.ValueAnimator animation) [0x00017] in <ad2f15102b3a4d36b40e9b0cbc11c376>:0 
+03-08 11:57:06.847 I/MonoDroid(24980):   at Android.Animation.ValueAnimator+IAnimatorUpdateListenerInvoker.n_OnAnimationUpdate_Landroid_animation_ValueAnimator_ (System.IntPtr jnienv, System.IntPtr native__this, System.IntPtr native_animation) [0x00011] in <ad2f15102b3a4d36b40e9b0cbc11c376>:0 
+03-08 11:57:06.847 I/MonoDroid(24980):   at (wrapper dynamic-method) System.Object.16(intptr,intptr,intptr)
+03-08 11:57:06.860 W/com.companynam(24980): JNI RegisterNativeMethods: attempt to register 0 native methods for android.runtime.JavaProxyThrowable
+03-08 11:57:06.862 D/Mono    (24980): DllImport searching in: '__Internal' ('(null)').
+03-08 11:57:06.862 D/Mono    (24980): Searching for 'java_interop_jnienv_throw'.
+03-08 11:57:06.862 D/Mono    (24980): Probing 'java_interop_jnienv_throw'.
+03-08 11:57:06.862 D/Mono    (24980): Found as 'java_interop_jnienv_throw'.
+Unhandled Exception:
+
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+
+Thread finished: <Thread Pool> #3
+Le thread 0x3 s'est arrêté avec le code 0 (0x0).
+03-08 11:57:17.212 E/mono    (24980): 
+03-08 11:57:17.212 E/mono    (24980): Unhandled Exception:
+03-08 11:57:17.212 E/mono    (24980): System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+03-08 11:57:17.212 E/mono    (24980):   at (wrapper dynamic-method) System.Object.16(intptr,intptr,intptr)
+03-08 11:57:17.212 E/mono    (24980):   at (wrapper native-to-managed) System.Object.16(intptr,intptr,intptr)
+03-08 11:57:17.213 E/mono-rt (24980): [ERROR] FATAL UNHANDLED EXCEPTION: System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+03-08 11:57:17.213 E/mono-rt (24980):   at (wrapper dynamic-method) System.Object.16(intptr,intptr,intptr)
+03-08 11:57:17.213 E/mono-rt (24980):   at (wrapper native-to-managed) System.Object.16(intptr,intptr,intptr)

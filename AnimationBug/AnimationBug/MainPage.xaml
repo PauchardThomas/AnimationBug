@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="AnimationBug.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AnimationBug">
+
+    <StackLayout>
+        <!--  Place new controls here  -->
+        <BoxView x:Name="bvAnim" BackgroundColor="#27afb7" CornerRadius="90" HeightRequest="70" HorizontalOptions="End" Opacity="1" VerticalOptions="CenterAndExpand" WidthRequest="60" />
+
+    </StackLayout>
+
+</ContentPage>
